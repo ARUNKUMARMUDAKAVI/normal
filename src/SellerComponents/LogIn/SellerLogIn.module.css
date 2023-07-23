@@ -1,12 +1,5 @@
-:root {
-    --main-bg: #7300E6;
-    --second-bg: #B366FF;
-    --white: #ffffff;
-    --blue: #0000ff;
-}
-
 .container{
-    background-color: var(--second-bg);
+    background-color: #B366FF;
     width: 30vw;
     height: 60vh;
     display: flex;
@@ -18,13 +11,13 @@
 
 .log {
     padding: 5vh 0vh;
-    font: 3vw sans-serif;
-    color: var(--white);
+    font: 3em sans-serif;
+    color: #ffffff;
 }
 
 .alr {
     font: 1em sans-serif;
-    color: var(--blue);
+    color: blue;
 }
 
 .email, .pwd{
@@ -36,8 +29,8 @@
 }
 
 .btnSub{
-    background-color: var(--main-bg);
-    color: var(--white);
+    background-color: #7300E6;
+    color: #ffffff;
     margin: 2vh 0vh;
     width: 20vw;
     height: 5vh;

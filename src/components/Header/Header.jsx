@@ -1,28 +1,32 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Styles from './Header.module.css'
 
 export const Header = () => {
   return (
     <>
-        <header>
+        <header className={Styles.container}>
             <ul>
                 <li>
-                    <NavLink to='/'>Home</NavLink>
+                    <NavLink className={Styles.navlink} to='/'>HOME</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/profile'>Profile</NavLink>
+                    <input className={Styles.search} type="search" name="search" id="ser" />
                 </li>
                 <li>
-                    <NavLink to='/myorders'>My Orders</NavLink>
+                    <NavLink className={Styles.navlink} to='/seller'>Be a Seller</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/cart'>Cart</NavLink>
+                    <NavLink className={Styles.navlink} to='/orders'>ORDERS</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/login'>Login</NavLink>
+                    <NavLink className={Styles.navlink} to='/cart'>CART</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/signup'>Sign Up</NavLink>
+                    <NavLink className={Styles.navlink} to='/login'>LOGIN</NavLink>
+                </li>
+                <li>
+                    <NavLink className={Styles.navlink} to='/signup'>SIGN UP</NavLink>
                 </li>
             </ul>
         </header>

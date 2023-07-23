@@ -1,0 +1,49 @@
+:root {
+    --main-bg: #7300E6;
+    --second-bg: #B366FF;
+    --white: #ffffff;
+    --blue: #0000ff;
+}
+
+.container{
+    background-color: var(--second-bg);
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+    border-radius: .5rem;
+}
+
+.sign {
+    padding: 3vh 0vh;
+    font: 3em sans-serif;
+    color: var(--white);
+}
+
+.email, .pwd, .fname, .lname, .pwd, .cpwd{
+    width: 20vw;
+    height: 5vh;
+    margin: 1.5vh;
+    padding-left: 1rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.btnSub{
+    background-color: var(--main-bg);
+    color: var(--white);
+    margin: 2vh 0vh;
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.alr {
+    font: 1em sans-serif;
+    color: var(--blue);
+}

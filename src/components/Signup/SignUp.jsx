@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
 import axios from 'axios'
+import { NavLink } from 'react-router-dom'
+import Styles from './Signup.module.css'
 
 
 export const SignUp = () => {
@@ -32,17 +34,16 @@ export const SignUp = () => {
     <>
         <center>
             <form onSubmit={(e) => data(e)}>
-              <label htmlFor="fname" >First Name</label>
-              <input type="text" ref={fnameRef}/>
-              <label htmlFor="lname">Last Name</label>
-              <input type="text" ref={lnameRef} />
-              <label htmlFor="email">Email</label>
-              <input type="email" name="email" id="email" ref={emailRef} />
-              <label htmlFor="pwd">Password</label>
-              <input type="password" name="pwd" id="pwd" />
-              <label htmlFor="cpwd">Confirm Password</label>
-              <input type="password" name="cpwd" id="cpwd" ref={pwdRef} />
-              <button type="submit">Sign Up</button>
+              <section className={Styles.container}>
+              <span className={Styles.sign}>Sign Up</span>
+              <input className={Styles.fname} placeholder='Enter First Name' type="text" ref={fnameRef}/>
+              <input className={Styles.lname} placeholder='Enter Last Name' type="text" ref={lnameRef} />
+              <input className={Styles.email} placeholder='Enter Your Email' type="email" name="email" id="email" ref={emailRef} />
+              <input className={Styles.pwd} placeholder='Enter Password' type="password" name="pwd" id="pwd" />
+              <input className={Styles.cpwd} placeholder='Enter Confirm Password' type="password" name="cpwd" id="cpwd" ref={pwdRef} />
+              <button className={Styles.btnSub} type="submit">Sign Up</button>
+              <NavLink className={Styles.alr} to='/login'>Already have an account? Log In</NavLink>
+              </section>
             </form>
         </center>
     </>
